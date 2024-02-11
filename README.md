@@ -1,36 +1,35 @@
-# Next.js Authentication Application
+# AArena Testing
 
-This project showcases user authentication using NextAuth, Prisma,Supabase, Shadcn/UI, and Tailwind CSS.
-
-## Screenshots
-
-![Screenshot 1](screenshots/screenshot-1.png)
-*sign-in*
-
-![Screenshot 2](screenshots/screenshot-2.png)
-*sign-up*
+This is a simple project to learn and experiment some features of Next.js, NextAuth, Prisma, and Tailwind CSS.
 
 ## Features
 
-- User authentication with NextAuth
-- Database integration with Prisma
-- UI components from Shadcn/UI
-- Styling with Tailwind CSS
+- [x] Next.js
+- [x] Server Actions
+- [x] Form Validation
+- [x] FormState and FormStatus
+- [ ] Optimistic Updates
+- [x] NextAuth (Google)
+- [x] MongoDB
+- [x] Prisma
+- [x] Tailwind CSS
+- [x] Formik
+- [x] Yup
 
 ## Prerequisites
 
 Make sure you have the following installed before running the project:
 
 - Node.js and npm (Node Package Manager)
-- PostgreSQL database (or another supported database for Prisma)
+- MongoDb atlas database (or another supported database for Prisma)
 
 ## Getting Started
 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/dead8309/nextjs-nextauth-login.git
-    cd nextjs-nextauth-login
+    git clone https://github.com/dead8309/AArenaTesting.git
+    cd AArenaTesting
     ```
 
 2. **Install dependencies:**
@@ -44,8 +43,11 @@ Make sure you have the following installed before running the project:
     Create a `.env.local` file in the root directory and add the following:
 
     ```env
-    DATABASE_URL=your_database_url
-    NEXTAUTH_SECREt=ejenfvceiwfnveiwnfcveenef
+    NEXTAUTH_SECRET=secret
+    DATABASE_URL="db url"
+    GOOGLE_CLIENT_ID="GOOGLE_CLIENT_ID"
+    GOOGLE_CLIENT_SECRET="GOOGLE_CLIENT_SECRET"
+    NEXTAUTH_URL=http://localhost:3000
     ```
 
 4. **Run database migrations:**
@@ -76,7 +78,9 @@ Make sure you have the following installed before running the project:
 - [Prisma](https://www.prisma.io/)
 - [Shadcn/UI](https://github.com/shadcn/ui)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Supabase](https://supabase.io/)
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- [Formik](https://formik.org/)
+- [Yup](https://github.com/jquense/yup)
 
 
 ## Learn More
