@@ -1,8 +1,6 @@
-import SignInButton from "@/components/sign-in-button";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -20,14 +18,14 @@ export default function Home() {
       </div>
 
       <div className="flex gap-2">
-        <Link href="/dashboard" className={buttonVariants()}>
+        <Link href="/learning-paths" className={buttonVariants()}>
           Get Started
         </Link>
         <Link
-          href="/about"
+          href="/community"
           className={buttonVariants({ variant: "secondary" })}
         >
-          Learn More
+          Join Community
         </Link>
       </div>
 
